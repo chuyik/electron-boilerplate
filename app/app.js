@@ -6,12 +6,14 @@ var pluginMgr     = require('./plugin-manager')
 require('./lib/crash-handler')
 
 /**
- * 程序运行
+ * Emitted when app starts
  */
 app.on('ready', function() {
 
   pluginMgr.init()
 
+  // Docs:
+  // https://github.com/mikaelbr/node-notifier
   notifier.notify({
     'title': 'Welcome!',
     'message': 'Happy building apps.'

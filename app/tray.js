@@ -2,6 +2,10 @@ var menubar = require('menubar')
 var path = require('path')
 var config = require('./config')
 
+/**
+ * Docs:
+ * https://github.com/maxogden/menubar
+ */
 var mb = menubar({
   dir: path.join(config.pluginsPath, 'tray'),
   icon: path.join(config.root, 'shared/img/icon/icon-s.png'),
