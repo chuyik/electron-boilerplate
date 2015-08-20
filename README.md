@@ -31,6 +31,7 @@ gulp sass      # Compile SASS files
 - Flexiblze plugin based approach (Windows are managed as plugins)
   > You could create a new window by adding a folder in [plugins](./plugins) directory
   > and modifying settings in [config.js](./app/config.js)
+  
 - Useful third-party plugins integration
 - Built in pre-processing (SASS supported currently)
 - Application Updater (Working on progress)
