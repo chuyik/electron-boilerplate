@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Veda</title>
+
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <script src="../../shared/plugins/live-reload.js"></script>
+  </head>
+  <body>
+
+    <div class="wrap">
+      <div class="app_header">
+        <h1>Electron Boilerplate</h1>
+        <div class="desc">
+          You are welcome to post an <a href="https://github.com/chuyik/electron-boilerplate/issues">issue</a> here if any thoughts.
+        </div>
+      </div>
+
+      <div id="home_container">
+      </div>
+
+      <div class="footer">
+        We are using io.js <script>document.write(process.version)</script>
+          and Electron <script>document.write(process.versions['electron'])</script>.
+        <div style="float: right">
+          Made with ♥︎ and JavaScript
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var App = require('./js/main')
+    App.run()
+  </script>
+  </body>
+</html>

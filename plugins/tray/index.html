@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tray!!!</title>
+  <script src="../../shared/plugins/live-reload.js"></script>
+</head>
+<body>
+  <h2>This is a tray window.</h2>
+
+  <button id='toggle-main-window'>Toggle Finder</button>
+  <button id='toggle-prefs'>Toggle Prefs</button>
+
+  <script type="text/javascript">
+
+    // Example for ipc
+    var ipc = require('ipc')
+
+    document.getElementById('toggle-main-window').onclick = function() {
+      ipc.send('toggle-window', 'main-window')
+    }
+
+    document.getElementById('toggle-prefs').onclick = function() {
+      ipc.send('toggle-window', 'prefs')
+    }
+  </script>
+</body>
+</html>

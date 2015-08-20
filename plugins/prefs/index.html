@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Preferences Panel</title>
+  <script src="../../shared/plugins/live-reload.js"></script>
+</head>
+<body>
+  <h2>This is a preferences setting window.</h2>
+
+  <p>Application environment: <span id="isdev"></span></p>
+
+  <p>
+    <span>Window on top: </span>
+    <input type="checkbox" id="set-on-top-btn">
+  </p>
+
+  <button id="close-window-btn">Close window</button>
+
+  <script type="text/javascript">
+
+    // Example for fetching app settings
+    var remote = require('remote')
+    var oDiv = document.getElementById("isdev")
+    oDiv.textContent = remote.getGlobal('shared').isDev ? 'dev mode': 'production mode'
+
+    // Example for ipc
+    var ipc = require('ipc')
+
+    document.getElementById('close-window-btn').onclick = function() {
+      ipc.send('hide-window', 'prefs')
+    }
+
+    document.getElementById('set-on-top-btn').onchange = function() {
+      ipc.send('set-on-top', 'main-window', this.checked)
+    }
+
+  </script>
+</body>
+</html>
