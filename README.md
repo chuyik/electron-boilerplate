@@ -8,6 +8,9 @@ Best electron boilerplate you can have.
 ```bash
 git clone https://github.com/chuyik/electron-boilerplate.git  # Download this project
 
+# Ignore this if you're not behind GFW
+export ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/
+
 cd electron-boilerplate  # Switch directory
 npm install              # Install dependencies
 gulp                     # Start application
