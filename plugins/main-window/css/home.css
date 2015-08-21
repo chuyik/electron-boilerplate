@@ -47,6 +47,10 @@ body {
   overflow: hidden;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .app_header {
   position: relative;
   background: #ef3b42;
@@ -75,6 +79,7 @@ body {
   z-index: 10;
   color: #999;
   font-size: 10px;
+  background-color: #FFF;
 }
 
 .smile {
@@ -98,6 +103,10 @@ body {
   display: block;
   content: ":)";
   transform: rotate(90deg);
+}
+
+#home_container {
+  overflow: auto;
 }
 
 @keyframes fadeIn {
