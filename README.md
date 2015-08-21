@@ -1,6 +1,6 @@
 Electron Boilerplate
 ---
-Best electron boilerplate you can have.
+The best electron boilerplate you can have.
 
 # Quick Start
 > Prerequisites: [Node](https://nodejs.org/), [Git](https://git-scm.com/).
