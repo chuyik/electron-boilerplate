@@ -90,7 +90,7 @@ gulp.task('build', function () {
   _.assign(publishOpts, {
     platform: ['darwin', 'win32'],
     arch: 'all',
-    out: path.build,
+    out: paths.build,
     asar: true
   })
   packager(publishOpts, function done (err, appPath) {
