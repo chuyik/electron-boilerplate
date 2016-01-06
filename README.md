@@ -56,7 +56,7 @@ After built, the dist files should be saved to `output` folder by default.
 # Roadmap
 - Rewrite in ES6
 - Separate source and compiled files (Increase the difficulty of being cracked)
-- Application uploader
+- Application Updater
 
 # License
 [MIT license](http://opensource.org/licenses/MIT)
