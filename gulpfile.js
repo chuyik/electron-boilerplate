@@ -91,7 +91,8 @@ gulp.task('build', function () {
     platform: ['darwin', 'win32'],
     arch: 'all',
     out: paths.build,
-    asar: true
+    asar: true,
+    'asar-unpack-dir': "node_modules/node-notifier/vendor/"
   })
   packager(publishOpts, function done (err, appPath) {
     if (err) return console.error(err)
