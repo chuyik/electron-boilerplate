@@ -2,6 +2,9 @@ Electron Boilerplate
 ---
 The best electron boilerplate you can have.
 
+![image](https://cloud.githubusercontent.com/assets/6262943/12143690/b3735886-b4bd-11e5-9b7b-7a76bfd877fa.png)
+
+
 # Quick Start
 > Prerequisites: [Node](https://nodejs.org/), [Git](https://git-scm.com/).
 
