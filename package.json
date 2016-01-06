@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "electron-connect": "chuyik/electron-connect",
-    "electron-packager": "^5.0.0",
+    "electron-packager": "^5.2.0",
     "electron-prebuilt": "^0.30.4",
     "gulp": "^3.9.0",
     "gulp-sass": "^2.0.3"
